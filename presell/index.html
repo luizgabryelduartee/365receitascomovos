@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Continuar</title>
 
-  <!-- UTMify (único script necessário) -->
+  <!-- SCRIPT UTMIFY (ÚNICO SCRIPT) -->
   <script
     src="https://cdn.utmify.com.br/scripts/utms/latest.js"
     data-utmify-prevent-xcod-sck
@@ -15,12 +15,15 @@
   ></script>
 
   <style>
+    * {
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
     body {
       margin: 0;
       padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #fff;
-      color: #1a1a1a;
+      background: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -28,75 +31,73 @@
     }
 
     .container {
-      max-width: 420px;
       width: 100%;
-      background: #f9fff6;
+      max-width: 420px;
+      background: #f6fff1;
       border-radius: 16px;
-      padding: 32px 24px;
+      padding: 28px 22px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
       text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
 
-    .headline {
+    .title {
       font-size: 1.6rem;
       font-weight: 700;
       color: #2e7d32;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     .progress {
       width: 100%;
       height: 8px;
-      background: #e0e0e0;
-      border-radius: 10px;
+      background: #dfeedd;
+      border-radius: 6px;
       overflow: hidden;
-      margin: 16px 0 24px;
+      margin: 18px 0;
     }
 
-    .progress span {
-      display: block;
-      width: 60%;
+    .progress-bar {
+      width: 65%;
       height: 100%;
-      background: linear-gradient(90deg, #7ac943, #4caf50);
-      border-radius: 10px;
+      background: linear-gradient(90deg, #7bcf5a, #4caf50);
     }
 
     .text {
       font-size: 1rem;
-      color: #444;
-      margin-bottom: 20px;
-      line-height: 1.4;
+      color: #333;
+      margin: 18px 0;
+      line-height: 1.5;
     }
 
-    .product-hint {
-      font-size: 0.95rem;
+    .highlight {
       color: #2e7d32;
-      margin-bottom: 28px;
+      font-weight: 600;
     }
 
     .cta {
-      display: inline-block;
+      display: block;
       width: 100%;
+      margin: 22px auto 0;
       padding: 16px;
-      font-size: 1.15rem;
+      font-size: 1.05rem;
       font-weight: 700;
-      color: #fff;
-      background: linear-gradient(135deg, #7ac943, #4caf50);
+      color: #ffffff;
+      background: linear-gradient(180deg, #7ecb5a, #4caf50);
       border-radius: 12px;
       text-decoration: none;
-      box-shadow: 0 8px 20px rgba(76, 175, 80, 0.35);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 8px 18px rgba(76, 175, 80, 0.35);
+      transition: all 0.2s ease;
     }
 
     .cta:hover {
       transform: scale(1.03);
-      box-shadow: 0 10px 24px rgba(76, 175, 80, 0.5);
+      box-shadow: 0 10px 24px rgba(76, 175, 80, 0.45);
     }
 
     .footer {
-      margin-top: 28px;
-      font-size: 0.75rem;
+      font-size: 0.78rem;
       color: #666;
+      margin-top: 22px;
       line-height: 1.4;
     }
 
@@ -109,27 +110,28 @@
 </head>
 
 <body>
-  <div class="container">
 
-    <div class="headline">
+  <div class="container">
+    <div class="title">
       Tudo certo até aqui 🥚✅
     </div>
 
     <div class="progress">
-      <span></span>
+      <div class="progress-bar"></div>
     </div>
 
     <div class="text">
-      Você está a um passo de acessar as <strong>365 receitas com ovo</strong>,
+      Você está a um passo de acessar as
+      <span class="highlight">365 receitas com ovo</span>,
       organizadas para facilitar seu dia a dia na cozinha.
     </div>
 
-    <div class="product-hint">
-      🍳 Receitas práticas, econômicas e deliciosas
+    <div class="text">
+      🔍 Receitas práticas, econômicas e deliciosas
     </div>
 
-    <!-- TROQUE O LINK ABAIXO PELO LINK DA PÁGINA PRINCIPAL -->
-    <a href="https://SEUSITEAQUI.com" class="cta">
+    <!-- 🔗 TROQUE AQUI PELO LINK DA PÁGINA PRINCIPAL -->
+    <a href="https://365receitascomovos.shop/" class="cta">
       QUERO CONTINUAR
     </a>
 
@@ -141,7 +143,7 @@
       <a href="#">Termos de Uso</a> |
       <a href="#">Contato</a>
     </div>
-
   </div>
+
 </body>
 </html>
